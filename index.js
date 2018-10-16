@@ -1,6 +1,6 @@
 const _defaultOption = {
-  minLen      : 1,
-  maxLen      : 10,
+  minLen      : 4,
+  maxLen      : 8,
   number      : true,
   character   : true,
   specialChar : true
@@ -56,7 +56,7 @@ let _validStringCharacters = (number, character, specialChar) => {
 
 
 /*
-*
+* 
 *
 *
 */
@@ -93,6 +93,6 @@ const _generate = ( option = _defaultOption ) => {
 
 
 module.exports = {
-    generate : _generate(),
-    defaultOption : _defaultOption()
+    generate      : _generate,
+    defaultOption : _defaultOption
 }
